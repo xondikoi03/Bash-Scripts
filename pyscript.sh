@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #=====================================================#
-#  Bash script to make C/C++ scripts with predefined  #
+#  Bash script to make Python scripts with predefined #
 #  functions and comments.                            #
 #=====================================================#
 
@@ -20,7 +20,7 @@ read AUTHOR
 echo "Enter any additional comments to be added in the beginning: "
 read INITIAL_COMMENT
 
-FILENAME="$FILE".C
+FILENAME="$FILE".py
 
 # Check if filename already exists
 
@@ -38,7 +38,7 @@ echo //-----------------------------------------------------  > $FILENAME
 echo // ${INITIAL_COMMENT}                                   >> $FILENAME
 echo // Original Author: ${AUTHOR}                           >> $FILENAME
 echo // Date Created: ${CURRENT_DATE}                        >> $FILENAME
-echo // C/C++ Source Code                                    >> $FILENAME
+echo // Python Source Code                                   >> $FILENAME
 echo //----------------------------------------------------- >> $FILENAME
 
 
